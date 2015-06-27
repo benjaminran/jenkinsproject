@@ -1,0 +1,9 @@
+<settings>
+    <servers>
+        <server>
+            <id>ssh-repository</id>
+            <username>ubuntu</username>
+            <privateKey>/path/to/your/private/key</privateKey> <!-- don't want to pass around my private in git.... -->
+        </server>
+    </servers>
+</settings>

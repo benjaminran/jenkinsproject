@@ -53,5 +53,19 @@
                 </executions>
             </plugin>
         </plugins>
+        <extensions>
+            <!-- Enabling the use of SSH -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh-external</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>ssh-repository</id>
+            <url>scpexe://52.11.81.109/public_html/jenkinsproject</url>
+        </repository>
+    </distributionManagement>
 </project>
