@@ -64,8 +64,9 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>ssh-repository</id>
-            <url>scpexe://52.11.81.109/public_html/jenkinsproject</url>
+            <id>ssh-ec2-deploy</id>
+            <name>SSH Deployment to EC2</name>
+            <url>scp://ubuntu@52.11.81.109/</url>
         </repository>
     </distributionManagement>
 </project>

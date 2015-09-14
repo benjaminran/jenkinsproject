@@ -1,9 +1,14 @@
 <settings>
     <servers>
         <server>
-            <id>ssh-repository</id>
+            <id>ssh-ec2-deploy</id>
             <username>ubuntu</username>
-            <privateKey>/path/to/your/private/key</privateKey> <!-- don't want to pass around my private in git.... -->
+            <privateKey>~/dev/aws-keys/awskey2.pem</privateKey>
+            <configuration>
+                <sshExecutable>ssh</sshExecutable>
+                <scpExecutable>scp</scpExecutable>
+                <sshArgs></sshArgs>
+            </configuration>
         </server>
     </servers>
 </settings>
